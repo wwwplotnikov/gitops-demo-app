@@ -3,7 +3,10 @@ name: CI
 on:
   push:
     branches: [main]
-
+    paths:
+      - 'app/**'
+      - 'Dockerfile'
+      - '.github/workflows/**'
 env:
   IMAGE: ghcr.io/${{ github.repository_owner }}/gitops-demo-app
   CONFIG_REPO: ${{ github.repository_owner }}/gitops-demo-config
