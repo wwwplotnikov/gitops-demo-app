@@ -36,3 +36,4 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     print(f"gitops-demo-app version={APP_VERSION} listening on :{PORT}", flush=True)
     HTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
+# trigger deploy
